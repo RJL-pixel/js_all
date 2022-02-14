@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+
+
+ function numMin(num1, num2, num3) {
+     if (num1 < num2 && num1 < num3) {
+         document.write(num1);
+         console.log(num1);
+
+     } else if (num2 < num3 && num2 < num1) {
+         console.log(num2);
+         document.write(num2);
+
+     } else {
+         console.log(num3);
+         document.write(num3);
+
+
+     }
+ }
+ numMin(400, 200, 70);
+
+
+
+ function numMax(num1, num2, num3) {
+
+
+     if (num1 > num2 && num1 > num3) {
+         document.write(num1);
+         console.log(num1);
+
+
+     } else if (num2 > num3 && num2 > num1) {
+         console.log(num2);
+         document.write(num2);
+
+     } else {
+
+         console.log(num3);
+        document.write(num3);
+
+     }
+ }
+ numMax(8778, 78787, 78587);
+
+
+
+ let maxArray = [200,3,4,5,6,10,40000,3,600]
+ function arrayMax(array) {
+     let max = array[0];
+    for (const element of array) {
+         if(element > max){
+             max = element;
+         }
+    }
+     return max;
+ }
+ document.write(`<h2>Найбільший елемент масиву: ${arrayMax(maxArray)}</h2>`)
+
+
+let minArray = [200,3,4,5,6,-10,40000,3,600]
+ function arrayMin(array) {
+     let min = array[0];
+     for (const element of array) {
+         if(element < min){
+             min = element;
+        }
+     }
+     return min;
+ }
+ document.write(`<h2>Найменши елемент масиву: ${arrayMin(minArray)}</h2>`)
+
+
+
+ let summArray = [1,2,3,4]; // 10
+ function sumElement (array){
+    let sum = 0;
+     for (const arrayElement of array) {
+
+         sum = arrayElement + sum;
+     }
+     return sum;
+ }
+ document.write(sumElement(summArray))
+
+
+
+
+ let serednieArray = [1,2,3]; // 6/3=2
+ function serednie (array){
+     let sum = 0;
+     for (const arrayElement of array) {
+
+         sum = arrayElement + sum;
+     }
+     return sum/array.length;
+ }
+ document.write(serednie(serednieArray))
+
+
+
+function minMax(arg) {
+     let min = arguments[0];
+     let max = arguments[0];
+     for (const element of arguments) {
+         if (element > max) {
+             max = element;
+         }
+         if (element < min) {
+             min = element;
+         }
+     }
+     console.log("max ", max);
+     return min;
+ }
+ document.write('Мінімальне число з введених: ' + minMax(100, 20, 3, 100, 2021))
+
+
+
+ function Random (length) {
+     let arrayEmpty = [];
+     for (let i = 0; i < length; i++){
+         arrayEmpty.push(Math.floor(Math.random()*100));
+     }
+ return arrayEmpty
+ }
+
+ document.write(Random(12))
+
+
+
+
+ function random(length,limit) {
+     let emptyArray = [];
+     for (let i = 0; i < length; i++) {
+         emptyArray.push(Math.round(Math.random() * limit));
+     }
+     return emptyArray;
+ }
+ document.write(random(10,100));
+
+
+
+ function r (arr) {
+     let newArr = [];
+     for (let i = arr.length - 1, mi = 0; i >= 0; i--, mi++) {
+        newArr[mi] = newArr[i];
+    }
+
+    return newArr;
+ }
+
+
+</script>
+</body>
+</html>

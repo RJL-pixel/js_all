@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+    let numMin = (num1, num2, num3) =>  {
+         if (num1 < num2 && num1 < num3) {
+             document.write(num1);
+             console.log(num1);
+         } else if (num2 < num3 && num2 < num1) {
+             console.log(num2);
+             document.write(num2);
+         } else {
+             console.log(num3);
+            document.write(num3);
+         }
+     };
+     numMin(400, 200, 70);
+
+
+      let numMax = (num1, num2, num3) => {
+         if (num1 > num2 && num1 > num3) {
+             document.write(num1);
+             console.log(num1);
+        } else if (num2 > num3 && num2 > num1) {
+             console.log(num2);
+             document.write(num2);
+         } else {
+             console.log(num3);
+             document.write(num3);
+         }
+     };
+     numMax(40000, 2000, 7000);
+
+
+
+     let maxArray = [200,3,4,5,6,10,40000,3,600];
+
+     let arrayMax = (array) => {
+         let max = array[0];
+         for (const element of array) {
+             if(element > max){
+                 max = element;
+             }
+         }
+         return max;
+     }
+     document.write(`<h2>Найбільший елемент: ${arrayMax(maxArray)}</h2>`);
+
+
+
+     let minArray = [200,3,4,5,6,-10,40000,3,600]
+     let arrayMin = (array) => {
+         let min = array[0];
+         for (const element of array) {
+             if(element < min){
+               min = element;
+             }
+         }
+         return min;
+     }
+     document.write(`<h2>Найменши елемент: ${arrayMin(minArray)}</h2>`);
+
+
+
+     let summArray = [1,2,3,4];
+     let sumElement =  (array) => {
+         let sum = 0;
+         for (const arrayElement of array) {
+
+             sum = arrayElement + sum;
+         }
+         return sum;
+     }
+     document.write(sumElement(summArray));
+
+
+
+     let serednieArray = [1,2,3]; // 6/3=2
+     let serednie =  (array) => {
+        let sum = 0;
+         for (const arrayElement of array) {
+
+             sum = arrayElement + sum;
+        }
+         return sum/array.length;
+     }
+     document.write(serednie(serednieArray));
+
+
+
+     let minMax = (...arg) => {
+         let min = arg[0];
+         let max = arg[0];
+         for (const element of arg) {
+             if (element > max) {
+                 max = element;
+             }
+             if (element < min) {
+                 min = element;
+             }
+         }
+         console.log("max ", max);
+         return min;
+     }
+     document.write('Мінімальне число з введених: ' + minMax(-10, 10, -1000233, 734848734))
+
+
+     let funRandom = (length)=> {
+         let arrayEmpty = [];
+         for (let i = 0; i < length; i++){
+             arrayEmpty.push(Math.floor(Math.random()*100));
+         }
+     return arrayEmpty
+     };
+
+     document.write(funRandom(12))
+
+
+     let randomNumber = (length,limit) => {
+         let emptyArray = [];
+         for (let i = 0; i < length; i++) {
+             emptyArray.push(Math.round(Math.random() * limit));
+         }
+         return emptyArray;
+     }
+     document.write(randomNumber(10,100));
+
+
+
+
+     let array = [1, 2, 3, 4]
+     let reverse = (arr) => {
+         let newArr = [];
+         for (let i = arr.length - 1, ri = 0; i >= 0; i--, ri++) {
+             newArr[ri] = arr[i];
+         }
+
+         return newArr;
+     }
+     console.log(reverse(array));
+
+
+
+
+
+</script>
+</body>
+</html>

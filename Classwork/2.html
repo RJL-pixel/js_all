@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<script>
+
+    let number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+
+    alert(number[0] + number[1] + number[2] + number[3] + number[4] + number[5] + number[6] + number[7] + number[8] + number[9]);
+
+
+    let Books = [
+     {
+
+        name: "The Witcher",
+        pages: 500,
+        genre: "fantasy"
+
+
+
+    },
+
+      {
+
+        name: "Lord of the Rings",
+        pages: 700,
+        genre: "fantasy",
+        authors: "Tolkien John Ronald Reuel"
+
+
+    }
+    ]
+
+    for (const Book of Books) {
+        document.write(
+            `<div>
+                        <h2>${Book.name}  <br/> ${Book.pages}   <br/> ${Book.genre}  <br/> ${Book.authors}</h2>
+
+                </div>`)
+    }
+
+
+
+
+
+
+let height = 23;
+    let width = 10;
+let s = height * width;
+    document.write(s);
+document.write("<br/>")
+
+let heightC = 10;
+let dC2 = 16;
+let P = 3.14;
+let v = P * dC2 * heightC;
+document.write(v);
+
+    document.write("<br/>")
+
+
+    let n = 3;
+    let m = 4;
+    let res = 3**2 * 4**2;
+
+    document.write(res);
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+<script>
+
+let time = prompt();
+
+if(time <= 15){
+    document.write("Перша чверть")
+}
+else if (time > 15 && time <=29){
+    document.write("Друга чверть")
+}
+else if (time > 30 && time <=45){
+    document.write("Третя чверть")
+}
+else if (time > 45 && time <=59){
+    document.write("Четверта чверть")
+}
+else {
+    document.write("Притримай коней, хлопако")
+}
+
+document.write("<br/>")
+
+
+
+let day = prompt();
+
+if(day <= 10){
+    document.write("Перша декада")
+}
+else if (day > 11 && day <=20){
+    document.write("Друга декада")
+}
+else if (day > 21 && day <=31){
+    document.write("Третя декада")
+}
+
+else {
+    document.write("Притримай коней, хлопако")
+}
+document.write("<br/>")
+let test = prompt();
+ if (test === true) {
+     document.write('ВІРНО')
+ }
+ else {
+     document.write('НЕВІРНО')
+     }
+
+document.write("<br/>")
+
+
+ let day1 = prompt()
+ switch (day1) {
+     case 1:
+         document.write('ПОНЕДІЛОК: Чілити не багато');
+         break;
+     case 2:
+         document.write('ВІВТОРОК: Вообще не чілити');
+         break;
+     case 3:
+         document.write('СЕРЕДА: Забити на все, та чілити');
+         break;
+     case 4:
+         document.write('ЧЕТВЕР: Тобі треба чілити від чіллу WTF?');
+         break;
+     case 5:
+         document.write('ПЯТНИЦЯ: Почати марафон в кількості днів без чілу');
+         break;
+     case 6:
+         document.write('СУБОТА: провалити вчорашній марафон');
+         break;
+    case 7:
+        document.write('НЕДІЛЯ: Чілити після тяжкого тижня');
+         break;
+     default:
+         document.write("Йди чілити, лінива срака");
+ }
+
+
+let year = prompt('Введіть кількість днів в цьому році');
+
+if(year % 4 === 0){
+    document.write('Рік ВИСОКОСНИЙ');
+ }else {
+    document.write('УРА! Наш рік нормальний');
+ }
+
+
+
+let oficialName = prompt('Яка «офіційна» назва JavaScript?');
+ if(oficialName === 'ECMAScript'){
+    alert('Правильно, гарна робота');/ } else{
+    alert('Неправильно, офіційна назва - ECMAScript!');
+ }
+
+
+
+
+</script>
+
+</body>
+</html>

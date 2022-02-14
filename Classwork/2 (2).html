@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+
+
+
+
+
+
+ let first = +prompt();
+ let second = +prompt();
+ if (first > second){
+     document.write(first)
+ } else if (first === second){
+   document.write(' рівно')
+ } else {
+   document.write(second);
+ }
+
+
+ let number = +prompt();
+ if (number > 0 && number <= 20) {
+   document.write('1 підїзд')
+  } else if (number >= 21 && number <= 48) {
+   document.write('2 підїзд')
+  } else if (number >= 49 && number <= 90) {
+   document.write('3 підїзд')
+  }
+
+ let number1 = 0;
+ if(number1 === 10){
+   document.write('ВІРНО')
+  }else{
+   document.write('НЕ ВІРНО')
+ }
+
+
+ let weather = +prompt('Яка сьогодні температура на вулиці? Введіть число');
+ if (weather >= 10 && weather <= 22) {
+   document.write('Опять кудась пертись');
+
+  }
+ else {
+   document.write('Чілл');
+
+  }
+
+
+ let lotereja = +prompt("Введите число от 1 до 5");
+ switch(lotereja)
+  {
+      case 1:
+          alert("Ви виграли автомобіль");
+          break;
+      case 2:
+          alert("Ти щось виграв, якщо згоден розтарабанити це зі мною");
+          break;
+
+      case 3:
+          alert("Тримай свій велосипед!!!");
+          break;
+
+      case 4:
+         alert("Виграв вилку в глаз або...");
+          break;
+
+      case 5:
+          alert("Програв, шутка ха-ха");
+          break;
+
+      default:
+         alert("Ха лох");
+          }
+
+
+</script>
+</body>
+</html>

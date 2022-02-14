@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<script>
+     let a = 'hello world';
+     console.log(a.length);
+
+     let a1 = 'lorem ipsum';
+     console.log(a1.length);
+
+     let a2 = 'javascript is cool';
+     console.log(a2.length);
+
+
+
+     let a3 = 'hello world';
+     let b = a3.toLocaleUpperCase();
+     console.log(b);
+
+     let a4 = 'lorem ipsum';
+     let b2 = a4.toLocaleUpperCase();
+     console.log(b2);
+
+     let a5 = 'javascript is cool';
+     let b3 = a5.toLocaleUpperCase();
+     console.log(b3);
+
+
+
+     let a6 = 'HELLO WORLD';
+     let b4 = a6.toLowerCase();
+     console.log(b4);
+
+     let a7 = 'LOREM IPSUM';
+     let b5 = a7.toLowerCase();
+     console.log(b5);
+
+     let a8 = 'JAVASCRIPT IS COOL';
+     let b6 = a8.toLowerCase();
+     console.log(b6);
+
+
+
+
+     let dirtyString = ' dirty string   ';
+     let trim = dirtyString.trim();
+     console.log(trim);
+
+
+
+
+
+     let stringToarray = (str) => {
+         return str.split(' ');
+     }
+
+
+     const str = 'Каждый охотник желает знать';
+    let arr = stringToarray(str);
+    document.writeln(arr);
+    console.log(arr);
+
+
+
+     let delete_characters = (str, index) => {
+         return str.substr(0, index);
+     };
+
+     document.writeln(delete_characters(str, 7));
+
+
+
+     let insert_dash = (str) => {
+         let splitJoinUpper = str1.split(' ').join('-').toUpperCase();
+         return splitJoinUpper;
+     }
+
+
+      let  str1 = "HTML JavaScript PHP";
+    document.writeln(insert_dash(str1));
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
